@@ -12,9 +12,12 @@ void environment_structure::send_opengl_uniform(opengl_shader_structure const& s
 
 std::string project_settings::path = "";
 float project_settings::gui_scale = 1.0f;
-bool project_settings::fps_limiting = true;
-float project_settings::fps_max = 60.0f;
-bool project_settings::vsync = true;
+
+// Uncapped FPS settings
+bool project_settings::fps_limiting = false; 
+float project_settings::fps_max = 144.0f; 
+bool project_settings::vsync = false;
+
 float project_settings::initial_window_size_width = 0.6f;
 float project_settings::initial_window_size_height = 0.6f;
 
@@ -22,4 +25,3 @@ void initialize_project_settings(const char* executable_path)
 {
 	project_settings::path = cgp::project_path_find(executable_path, "shaders/");
 }
-

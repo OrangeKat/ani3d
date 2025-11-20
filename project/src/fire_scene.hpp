@@ -4,23 +4,21 @@
 #include "environment.hpp"
 #include <vector>
 
-// Individual particle structure
 struct particle {
 	cgp::vec3 position;
 	cgp::vec3 velocity;
 	float life;
 	float max_life;
 	float size;
+	float rotation_offset;
 };
 
-// GUI parameters
 struct gui_parameters {
 	bool emit = true;
 	bool display_billboards = true;
 	bool realistic_fire = true;
 };
 
-// Fire scene class
 class fire_scene : public cgp::scene_inputs_generic
 {
 public:
@@ -44,12 +42,14 @@ private:
 	void draw_particles();
 
 	cgp::mesh_drawable fire_particle;
+	cgp::mesh_drawable campfire;
 	std::vector<particle> particles;
 	gui_parameters gui;
 	cgp::timer_basic timer;
+	
 	size_t max_particles = 10000;
 	float particle_size = 0.10f;
-	float emission_rate = 100.0f;
+	float emission_rate = 1000.0f;
 	float particle_lifetime = 1.0f;
 	float time_accumulator = 0.0f;
 };
