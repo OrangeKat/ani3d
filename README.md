@@ -1,7 +1,7 @@
 Install dependancies:
 
 ```
-cd project && git@github.com:drohmer/cgp.git
+cd project && git clone git@github.com:drohmer/cgp.git
 ```
 
 To build project:
