@@ -4,7 +4,7 @@ Par Thomas POLO et Gabriel CELLIER
 
 # Introduction
 
-Dans le cadre de ce projet de synthèse d'image, nous avons choisi de nous concentrer sur la simulation de phénomènes naturels, et plus particulièrement sur la modélisation d'un feu de camp. Contrairement aux objets rigides classiques, le feu est un fluide gazeux, turbulent, lumineux et hautement instable. Sa nature chaotique en fait un sujet d’étude particulièrement intéressant, tant du point de vue physique que du point de vue graphique.
+Dans le cadre de ce projet d'animation 3D, nous avons choisi de nous concentrer sur la simulation de phénomènes naturels, et plus particulièrement sur la modélisation d'un feu de camp. Contrairement aux objets rigides classiques, le feu est un fluide gazeux, turbulent, lumineux et hautement instable. Sa nature chaotique en fait un sujet d’étude particulièrement intéressant, tant du point de vue physique que du point de vue graphique.
 
 Notre objectif principal était de produire une simulation visuellement réaliste et performante, capable de fonctionner en temps réel (60 FPS) au sein du framework **CGP**. Pour cela, nous avons développé un moteur complet de système de particules, associé à un ensemble de shaders et d’algorithmes dédiés à la génération de turbulences, à la gestion de la couleur, et au rendu volumétrique.
 
@@ -105,8 +105,6 @@ p.velocity += turbulence * n_x;
 
 Un offset temporel dépendant de la hauteur crée une impression de volutes et de spirales montant le long de la flamme.
 
-*(Figure 2 : Visualisation des trajectoires : volutes générées par le bruit)*
-
 ---
 
 # 5. Rendu Visuel Avancé
@@ -122,8 +120,6 @@ Le billboarding consiste à orienter dynamiquement un quad (plan 2D) de sorte qu
 * étincelles,
 * particules lumineuses,
 * feuillage lointain.
-
-Dans notre projet, nous avons implémenté une version complète du billboarding avant de la remplacer par des primitives 3D. Cette implémentation reste activable dans le mode "debug" pour visualiser de manière plus simple le comportement des particules.
 
 ### Fonctionnement Technique
 
@@ -191,11 +187,8 @@ Nous avons intégré une interface complète grâce à **ImGui**, permettant de 
 * ajuster la densité d’émission,
 * modifier la taille des particules,
 * contrôler la turbulence,
-* activer un mode "debug" pour visualiser la géométrie brute.
 
 Cette interface a joué un rôle essentiel pour le réglage fin des valeurs physiques et pour l’obtention d’un résultat visuel harmonieux.
-
-*(Figure 3 : interface pour le contrôle dynamique de la simulation)*
 
 ---
 
