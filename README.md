@@ -1,4 +1,4 @@
-Install dependancies:
+## Install dependancies:
 
 ```
 cd project && git clone git@github.com:drohmer/cgp.git
@@ -15,3 +15,7 @@ To run project:
 ```
 ./project/build/project
 ```
+
+## Media
+
+A video demo can be found in the media directory
