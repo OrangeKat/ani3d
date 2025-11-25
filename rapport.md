@@ -10,7 +10,7 @@ Notre objectif principal était de produire une simulation visuellement réalist
 
 Ce rapport détaille l’ensemble des solutions techniques adoptées : du choix méthodologique jusqu’à la conception du pipeline graphique, en passant par l’architecture mémoire, le modèle physique, la gestion du bruit de Perlin, et la mise en place d’une interface utilisateur avancée.
 
-![Figure 1 : Rendu final de notre simulation intégré dans l'environnement 3D][media/campfire.png]
+![Figure 1 : Rendu final de notre simulation intégré dans l'environnement 3D](media/campfire.png)
 
 *(Figure 1 : Rendu final de notre simulation intégré dans l'environnement 3D)*
 
